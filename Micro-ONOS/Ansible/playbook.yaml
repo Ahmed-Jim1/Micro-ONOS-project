@@ -1,0 +1,8 @@
+---
+- name: Install Minikube, kubectl,  Docker, and Helm
+  hosts: all
+  become: yes
+  roles:
+    - cluster-setup
+    - helm
+
